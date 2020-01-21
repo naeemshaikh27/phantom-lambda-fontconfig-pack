@@ -27,3 +27,9 @@ If you face any more isses, such as PDF getting generated without text, then add
 
 1. Go to /usr/share/fonts/#{FONT FOLDER NAME}, copy all the font files from the folder folder
 2. if running on docker copy using `docker cp <CONTAINER_ID>:/fonts/ .`
+
+## Links for reference
+1. https://medium.com/@anjanava.biswas/nodejs-runtime-environment-with-aws-lambda-layers-f3914613e20e
+2. https://stackoverflow.com/a/56843029/3556874
+3. https://stackoverflow.com/a/18101158/3556874
+4. https://tech.mybuilder.com/compiling-wkhtmltopdf-aws-lambda-with-bref-easier-than-you-think/#comment-4681622370
