@@ -2,7 +2,7 @@
 
 ## Why
 
-Uing phantom js on lambda with nodejs 10 and 12 is not directly possible, it becase it misses few dependencies like libfontconfig.so on the newer amazon linux 2 base image. To overcome this problem you have to use your own fonts folder which contains the required files and a font.conf file
+Using phantom js on lambda with nodejs 10 and 12 is not directly possible, it becase it misses few dependencies like libfontconfig.so on the newer amazon linux 2 base image. To overcome this problem you have to use your own fonts folder which contains the required files and a font.conf file
 
 More details are contained in the links given below, you can generate your own or clone this pack and use it with your lambda
 
