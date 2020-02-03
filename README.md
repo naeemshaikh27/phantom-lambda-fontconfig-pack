@@ -11,7 +11,7 @@ More details are contained in the links given below, you can generate your own o
 1. Clone the pack, and add the font folder to your lambda zip.
 2. add following environment variables to you lambda
 
-`process.env['FONTCONFIG_PATH'] = process.env['LAMBDA_TASK_ROOT'];`
+`process.env['FONTCONFIG_PATH'] = path.join(process.env['LAMBDA_TASK_ROOT'], '...');`
 
 `process.env['LD_LIBRARY_PATH'] = path.join(process.env['LAMBDA_TASK_ROOT'], '...');`
 
