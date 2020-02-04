@@ -28,6 +28,26 @@ OR
 `LD_LIBRARY_PATH='/opt/fonts'`
 here the `fonts` folder is the root directory of you layer
 
+4. Change the font.conf file with following content:
+```
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <dir>/var/task/fonts/</dir>
+  <cachedir>/tmp/fonts-cache/</cachedir>
+  <config></config>
+</fontconfig>
+```
+5. If using lambda layer, with folder structure for example: `nodejs/fonts/font.conf`,
+Change the font.conf as with following content
+```
+<fontconfig>
+<dir>/opt/nodejs/fonts/</dir>
+<cachedir>/tmp/fonts-cache/</cachedir>
+<config></config>
+</fontconfig>
+```
+
 ## Adding font files
 
 If you face any more isses, such as PDF getting generated without text, then add .ttf font files to the fonts folder in the lambda/layer zip
